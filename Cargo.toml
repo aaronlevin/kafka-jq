@@ -1,0 +1,23 @@
+[package]
+name = "kafka-jq"
+version = "0.1.0"
+authors = ["Aaron Levin <aaronlevin@stripe.com>"]
+
+[dependencies]
+rdkafka = "0.14.0"
+log = "^0.3.0"
+clap = "^2.18.0" # dev-dependencies?
+futures = "^0.1.13"
+futures-cpupool = "^0.1.2"
+tokio-core = "^0.1.4"
+chrono = "^0.4.0"
+env_logger = "^0.3.0"
+bson = "0.11"
+base64 = "~0.6.0"
+lazy_static = "1.0"
+
+[dev-dependencies]
+proptest = "0.5.1"
+
+[build-dependencies]
+bindgen = "0.26.3"
