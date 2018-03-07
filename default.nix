@@ -10,13 +10,14 @@ let
   gdb = pkgs.gdb;
   java = pkgs.jre8;
   zlib = pkgs.zlib;
+  cargo = pkgs.cargo;
 in stdenv.mkDerivation {
 
     name = "kafka-jq";
     src = ./.;
 
     # dependencies
-    buildInputs = [ jq gcc rdkafka kafka zookeeper gdb java zlib ];
+    buildInputs = [ cargo jq gcc rdkafka kafka zookeeper gdb java zlib ];
 
     # how to build
     buildPhase = ''
