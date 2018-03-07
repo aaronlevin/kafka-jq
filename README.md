@@ -55,4 +55,4 @@ This is my first nontrivial rust project and quite frankly I don't know what I'm
 
 # Credits
 
-This project began during the Stripe Hackathon III, where [Nat Wilson](http://natw.49fold.com/) and I attempted to write `kafka-jq` in C to experience modern C development. It was fun but difficult and we thought the best way to address those two concerns was to re-write it in rust.
+This project began during the Stripe Hackathon III, where [Nat Wilson](http://natw.49fold.com/) and I attempted to write `kafka-jq` in C to experience modern C development. It was fun but difficult and we thought the best way to address one of those concerns was to re-write it in rust.
