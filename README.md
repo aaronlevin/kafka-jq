@@ -18,7 +18,7 @@ $ nix-shell default.nix
 will create a shell environment with the necessary libraries on your path (`jq` and `rdkafka`). Then you can start `zookeeper` and `kafka` locally:
 
 ```sh
-[nix-shell:~/kafka-jq-r]$ ./zookeeper-start.sh
+[nix-shell:~/kafka-jq-rs]$ ./zookeeper-start.sh
 ZooKeeper JMX enabled by default
 Using config: ./zoo.cfg
 Starting zookeeper ... STARTED
@@ -45,7 +45,7 @@ Which will create a topic named `test` with a single partition. From here you ca
 
 ## Testing
 
-`kafka-jq` uses `proptest` for the `JSON<->BSON` translation layer, but otherwise lacks tests. I currently use a forked [`kafka-benchmark`](https://github.com/fede1024/kafka-benchmark) to generate thousands of messages and push them into a topic that I'm reading from with `kafka-jq`. Ideally this wouldbe improved soon.
+`kafka-jq` uses `proptest` for the `JSON<->BSON` translation layer, but otherwise lacks tests. I currently use a forked [`kafka-benchmark`](https://github.com/fede1024/kafka-benchmark) to generate thousands of messages and push them into a topic that I'm reading from with `kafka-jq`. Ideally this would be improved soon.
 
 ## Feedback
 
@@ -53,4 +53,4 @@ This is my first nontrivial rust project and quite frankly I don't know what I'm
 
 ## Credits
 
-This project began during the Stripe Hackathon III, where [Nat Wilson](http://natw.49fold.com/) and I attempted to write `kafka-jq` in C as an attempt to experience modern C development. It was fun but difficult and we thought the best way to address those two concerns was to re-write it in rust.
+This project began during the Stripe Hackathon III, where [Nat Wilson](http://natw.49fold.com/) and I attempted to write `kafka-jq` in C to experience modern C development. It was fun but difficult and we thought the best way to address those two concerns was to re-write it in rust.
