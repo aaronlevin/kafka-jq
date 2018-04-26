@@ -4,7 +4,6 @@ version = "0.1.0"
 authors = ["Aaron Levin <aaronlevin@stripe.com>"]
 
 [dependencies]
-rdkafka = "0.14.0"
 log = "^0.3.0"
 clap = "^2.18.0" # dev-dependencies?
 futures = "^0.1.13"
@@ -16,8 +15,13 @@ bson = "0.11"
 base64 = "~0.6.0"
 lazy_static = "1.0"
 
+[dependencies.rdkafka]
+version = "0.15.0"
+features = ["dynamic_linking"]
+
 [dev-dependencies]
 proptest = "0.5.1"
+rdkafka = "0.15.0"
 
 [build-dependencies]
 bindgen = "0.26.3"
